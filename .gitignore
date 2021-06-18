@@ -1,2 +1,3 @@
 # add anything here
-
+.vscode
+*.pyc
