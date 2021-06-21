@@ -4,9 +4,13 @@ import random
 
 app = Flask(__name__)
 
-@app.route("/")
-def home():
-    num=random.randint(1,6)
+@app.route("/", methods=['POST', 'GET'])
+def index():
+    return render_template("index.html")
+
+@app.route("/roll", methods=['POST'])
+def roll():
+    num = random.randint(1,6)
     return render_template("index.html", random_number = num)
 
 

@@ -6,9 +6,21 @@
 
 {% block body %} 
 <h1>Dice Rolling Simulator</h1>
-<p>This is a dice rolling simulator. Reload the page to roll the die.</p>
+<p>This is a dice rolling simulator. Press the button to roll the die.</p>
+<!--Roll number Button -->
+<form action = "/roll" method = "post">
+    <input type="submit" value="Roll" name="Roll"/>
+</form>
+<!--Roll number Button -->
+<form action = "/"  method = "post">
+    <input type="submit" value="Clear" name="Clear"/>
+</form>
+
+
+    <!--<button type="button" class="btn btn-secondary">Roll</button>-->
+
+<!-- Show random number-->
 <font size="+2">{{ random_number }}</font>
-<button type="button" class="btn btn-secondary">Roll</button>
 
 {% endblock %}
 
