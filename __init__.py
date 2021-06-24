@@ -8,10 +8,14 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route("/roll", methods=['POST'])
-def roll():
+@app.route("/projects", methods=['POST', 'GET'])
+def projects():
     num = random.randint(1,6)
-    return render_template("index.html", random_number = num)
+    return render_template("projects.html", random_number = num)
+
+@app.route("/about", methods=['POST', 'GET'])
+def about():
+    return render_template("about.html")
 
 
 if __name__ == "__main__":
