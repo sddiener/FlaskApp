@@ -5,8 +5,26 @@
 {% endblock %}
 
 {% block body %} 
-<h1>Stefan's Personal Website</h1>
-<p>This website will show my CV, coding projects and more.</p>
+<section class="section">
+    <div class="container">
+      <h1 class="title">
+        Personal Website: Stefan Diener
+      </h1>
+      <p class="subtitle">
+        Welcome to my website!
+      </p>
+    </div>
+    <div class="box">
+        <img src="profile.jpg" alt="" class="box-img">
+        <h1>Stefan Diener</h1>
+        <h5>Student</h5>
+        <p> 
+            Lorem ipsum dolor sit amet, consetetur sadipscing
+            elitr, sed diam nonumy eirmod tempor invidunt ut 
+            labore et dolore magna aliquyam erat, sed diam voluptua.
+        </p>
+    </div>
+</section>
 {{ random_number }}
 {% endblock %}
 
