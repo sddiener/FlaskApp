@@ -1,54 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Personal Website</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
     {% block head %} {% endblock %}
+
   </head>
   <body>
-    <!-- Limit page size -->
     <div class="columns is-centered">
       <div class="column is-three-quarters">
+
         <!-- Navbar Bulma -->
-        <nav class="navbar" role="navigation" aria-label="main navigation">
+        <nav class="navbar has-shadow is-white" role="navigation" aria-label="main navigation">
           <div class="navbar-brand">
             <a class="navbar-item" href="{{ url_for('index') }}">
               SD
             </a>
         
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
+            <a class="navbar-burger" id="burger">
+              <span></span>
+              <span></span>
+              <span></span>
             </a>
           </div>
         
-          <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-menu" id="nav-links">
             <div class="navbar-end">
-              <a class="navbar-item" href="{{ url_for('index') }}">
-                Home
-              </a>
-        
-              <a class="navbar-item" href="{{ url_for('projects') }}">
-                Projects
-              </a>    
-
-              <a class="navbar-item" href="#">
-                About me
-              </a>  
-              <a class="navbar-item" href="#">
-                Contact
-              </a>    
-
+              <a class="navbar-item" href="{{ url_for('index') }}">Home</a>
+              <a class="navbar-item" href="{{ url_for('projects') }}">Projects</a>    
+              <a class="navbar-item" href="#">About me</a>  
+              <a class="navbar-item" href="#">Contact</a>    
             </div>
-        
           </div>
         </nav>
+
         {% block body %} {% endblock %}
+
       </div>
     </div>
-  
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
   </body>
 </html>

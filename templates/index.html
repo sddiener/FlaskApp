@@ -5,26 +5,19 @@
 {% endblock %}
 
 {% block body %} 
-<section class="section">
-    <div class="container">
-      <h1 class="title">
-        Personal Website: Stefan Diener
-      </h1>
-      <p class="subtitle">
-        Welcome to my website!
-      </p>
-    </div>
-    <div class="box">
-        <img src="profile.jpg" alt="" class="box-img">
-        <h1>Stefan Diener</h1>
-        <h5>Student</h5>
-        <p> 
-            Lorem ipsum dolor sit amet, consetetur sadipscing
-            elitr, sed diam nonumy eirmod tempor invidunt ut 
-            labore et dolore magna aliquyam erat, sed diam voluptua.
-        </p>
+    <h1 class="title is-size-1 has-text-centered my-6">
+    Personal Website: Stefan Diener
+    </h1>
+    <h3 class="subtitle is-size-3 has-text-centered py-3">
+    Welcome to my website!
+    </h3>
+    
+    <img src="background.jpg" alt="" class="box-img">
+    
+    <div class="section has-background-dark">
+        <div class="container has-background-light has-text-centered">
+            <p >Some description</p>
+        </div>
     </div>
 </section>
-{{ random_number }}
 {% endblock %}
-
