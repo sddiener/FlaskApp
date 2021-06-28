@@ -20,14 +20,14 @@
               SD
             </a>
         
-            <a class="navbar-burger" id="burger">
-              <span></span>
-              <span></span>
-              <span></span>
+            <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
             </a>
           </div>
         
-          <div class="navbar-menu" id="nav-links">
+          <div class="navbar-menu" id="navMenu">
             <div class="navbar-end">
               <a class="navbar-item" href="{{ url_for('index') }}">Home</a>
               <a class="navbar-item" href="{{ url_for('projects') }}">Projects</a>    
@@ -41,6 +41,6 @@
 
       </div>
     </div>
-    <script src="{{ url_for('static', filename='index.js') }}"></script>
+    <script src="{{url_for('static', filename='index.js')}}"></script>
   </body>
 </html>
