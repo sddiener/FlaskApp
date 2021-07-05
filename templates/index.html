@@ -3,17 +3,13 @@
 {% block head %} 
 <style>
     html body{
-      background-image: url("../static/img/muc_alps2.jpg");
-      background-size: cover; 
-      background-repeat: no-repeat;
-      background-attachment: fixed; 
-      background-position: 75% center;
+        background-image: url("../static/img/muc_alps2.jpg");
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        background-position: 75% center;
     }   
 </style>
-<!--  for #html body
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
--->
 {% endblock %}
 
 {% block body %} 
@@ -48,7 +44,7 @@
         <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
             <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#about">About me</a>
+                <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#projects">Projects</a>
@@ -64,12 +60,27 @@
 <!-- About -->
 <section id="about" class="bg-light py-5">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-5">
+        <div class="row align-items-center">
+            <p class="h1 text-center text-uppercase pb-3">About</p>
+            <p class="text-centered pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea necessitatibus officia minima impedit magnam earum, quia debitis molestias voluptatibus et eligendi ex dolor placeat pariatur aliquid dolore ipsa magni! Nobis quasi rerum expedita velit, dignissimos et. Itaque quam assumenda odio voluptates! Accusamus molestias ab commodi reprehenderit deserunt quisquam. Error, amet?</p>
+            <div class="col-xs-4">
                 <img class="img-fluid" src="/static/img/profile.jpg" alt="profilepic">
             </div>
-            <div class="col-6">
-                <h2 class="display-6">Here will be an about section!</h2>
+            <div class="col-xs-4">
+                <ul class="list-group-flush">
+                    <li class="list-group-item border-0 bg-light"><strong>Lorem:</strong>  ipsum dolor.</li>
+                    <li class="list-group-item border-0 bg-light"><strong>Lorem:</strong>  ipsum.</li>
+                    <li class="list-group-item border-0 bg-light"><strong>Lorem:</strong>  ipsum.</li>
+                    <li class="list-group-item border-0 bg-light"><strong>Lorem:</strong>  ipsum.</li>
+                </ul>
+            </div>
+            <div class="col-xs-4">
+                <ul class="list-group-flush" styles="list-group-bg:light">
+                    <li class="list-group-item border-0 bg-light"><strong>Lorem:</strong>  ipsum dolor.</li>
+                    <li class="list-group-item border-0 bg-light"><strong>Lorem:</strong>  ipsum.</li>
+                    <li class="list-group-item border-0 bg-light"><strong>Lorem:</strong>  ipsum.</li>
+                    <li class="list-group-item border-0 bg-light"><strong>Lorem:</strong>  ipsum.</li>
+                </ul>
             </div>
         </div>
     </div>
