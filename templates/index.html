@@ -9,6 +9,11 @@
         background-attachment: fixed; 
         background-position: 75% center;
     }   
+    .card-img-top {
+    width: 100%;
+    height: 13vw;
+    object-fit: cover;
+    }
 </style>
 {% endblock %}
 
@@ -60,7 +65,7 @@
 <section id="about" class="bg-light py-5">
     <div class="container">
         <div class="row align-items-center">
-            <p class="h1 text-center text-uppercase pb-3">About</p>
+            <h1 class="text-center text-uppercase pb-3">About</h1>
             <p class="text-centered pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea necessitatibus officia minima impedit magnam earum, quia debitis molestias voluptatibus et eligendi ex dolor placeat pariatur aliquid dolore ipsa magni! Nobis quasi rerum expedita velit, dignissimos et. Itaque quam assumenda odio voluptates! Accusamus molestias ab commodi reprehenderit deserunt quisquam. Error, amet?</p>
             <div class="col-lg-4">
                 <div class="profileimg" style="width: 250px; height: 250px; overflow: hidden; border-radius: 50%; 
@@ -86,18 +91,55 @@
         </div>
     </div>
 </section>
+
+
 <!-- Projects -->
 <section id="projects" class="bg-white py-5">
     <div class="container">
-        <h2> This section will show some projects. </h2>
+        <h1 class="text-center text-uppercase pb-3">Projects</h1>
+        <div class="row my-5 align-items-top justify-content-center">
+            <div class="col-lg-3">
+                <div class="card">
+                    <img src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Placeholder Project 1</h5>
+                        <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the
+                        card's content.
+                        </p>
+                        <a href="#!" class="btn btn-primary">Project Site</a>
+                        <a href="#!" class="btn btn-primary">Github</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card">
+                    <img src="https://mdbootstrap.com/img/new/standard/nature/181.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Placeholder Project 2</h5>
+                        <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the
+                        card's content.
+                        </p>
+                        <a href="#!" class="btn btn-primary">Project Site</a>
+                        <a href="#!" class="btn btn-primary">Github</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 </section>
+
+
+
 <!-- Contact -->
 <section id="contact" class="bg-light py-5">
     <div class="container">
-        <h2> This is were you can contact me </h2>
+        <h2> Here will be a contact form in the future </h2>
     </div>
 </section>
+
 <!-- End -->
 <section id="end" class="bg-white  py-2">
     <div class="container">
