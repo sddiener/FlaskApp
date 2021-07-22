@@ -139,21 +139,24 @@
         <h1 class="text-center text-uppercase pb-3"> Contact </h1>
         <p class="lead text-center"> Got any Questions? Contact me directly! </p>
         <div class="row justify-content-center ">
-            <form class="col-lg-5">
+            <form class="col-lg-5" method="POST">
                 <div class="col mb-3">
-                    <input type="text" class="form-control" placeholder="Your Email" aria-label="Your Email">
+                    <input type="email" class="form-control" placeholder="Your Email" name="email" aria-label="Your Email">
+                </div>
+                <div class="col mb-3">
+                    <input type="text" class="form-control" placeholder="Subject" name="subject" aria-label="Subject">
                 </div>
                 <div class="col mb-4">
-                    <input type="text" class="form-control" placeholder="Subject" aria-label="Subject">
-                </div>
-                <div class="col mb-3">
-                    <textarea class="form-control" placeholder="Your message ..." aria-label="Message" rows="4"></textarea>
+                    <textarea class="form-control" placeholder="Your message ..."  name="message" aria-label="Message" rows="4"></textarea>
                 </div>
                 <button type="submit" class="btn btn-secondary">Submit</button>
             </form>
         </div>
     </div>
 </section>
+
+
+
 
 <!-- End -->
 <section id="end" class="bg-dark shadow-lg pt-2">
