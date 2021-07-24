@@ -23,10 +23,10 @@ def index():
 
     return render_template("index.html")
 
-@app.route("/projects", methods=['POST', 'GET'])
-def projects():
+@app.route("/sent", methods=['POST'])
+def sendmail():
     num = random.randint(1,6)
-    return render_template("projects.html", random_number = num)
+    return 
 
 
 

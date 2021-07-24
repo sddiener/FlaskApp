@@ -1,3 +1,5 @@
-# RockPaperScissors
+# Personal Website
 
-This repo is used to test Flask and deploy some simple website (url tba).
+Created a template for a personal website with flask.
+
+Check it out at stefandiener.com
