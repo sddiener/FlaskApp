@@ -13,20 +13,15 @@ def index():
         subject = request.form.get("subject")
         message = request.form.get("message")
 
-        subject_message = 'Subject: {}\n\n{}'.format(subject, message)
+        full_message = 'Subject: {}\n\n{}\n\n{}'.format(subject, message, email)
 
         server = smtplib.SMTP("smtp.gmail.com", 587)
         server.starttls()
         server.login("diener.stefan.daniel@gmail.com", os.environ.get('EMAIL_PW_DIENERSTEFANDANIEL'))
-        server.sendmail("diener.stefan.daniel@gmail.com", "sdiener7@gmail.com", subject_message)
+        server.sendmail("diener.stefan.daniel@gmail.com", "sdiener7@gmail.com", full_message)
         server.quit()
 
     return render_template("index.html")
-
-@app.route("/sent", methods=['POST'])
-def sendmail():
-    num = random.randint(1,6)
-    return 
 
 
 
