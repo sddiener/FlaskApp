@@ -1,3 +1,4 @@
 # add anything here
 .vscode
 *.pyc
+env_variables.yaml

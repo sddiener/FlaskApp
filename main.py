@@ -17,7 +17,7 @@ def index():
 
         server = smtplib.SMTP("smtp.gmail.com", 587)
         server.starttls()
-        server.login("diener.stefan.daniel@gmail.com", os.environ.get('EMAIL_PW_DIENERSTEFANDANIEL')) #TODO: set environment varialbe for PW!!!!!!
+        server.login("diener.stefan.daniel@gmail.com", os.environ.get('EMAIL_PW_DIENERSTEFANDANIEL'))
         server.sendmail("diener.stefan.daniel@gmail.com", "sdiener7@gmail.com", subject_message)
         server.quit()
 
@@ -31,5 +31,4 @@ def projects():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
-    app.run(host = "0.0.0.0", port = 5000)
+    app.run(host='127.0.0.1', port=8080, debug=True)
