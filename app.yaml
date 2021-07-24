@@ -2,3 +2,8 @@ runtime: python39
 
 includes:
   - env_variables.yaml
+
+handlers:
+- url: /
+  script: None
+  secure: always
